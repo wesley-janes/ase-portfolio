@@ -33,3 +33,33 @@ h1 { font-size: 2.4rem; margin: 0; }
 
 .small { color: #444; font-size: 0.95rem; }
 .tag { display: inline-block; border: 1px solid #ddd; border-radius: 999px; padding: 4px 10px; margin: 6px 6px 0 0; font-size: 0.9rem; }
+
+.split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.media img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.placeholder {
+  border-radius: 12px;
+  border: 1px dashed #cfcfcf;
+  padding: 18px;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ph-title { font-weight: 700; margin-bottom: 6px; }
+.ph-sub { color: #555; font-size: 0.95rem; }
+
+@media (max-width: 820px) {
+  .split { grid-template-columns: 1fr; }
+}
