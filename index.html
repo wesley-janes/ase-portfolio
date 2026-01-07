@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wesley Janes | Aerospace Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <header class="card">
-      <div>
-        <h1>Wesley Janes</h1>
-        <p class="subtitle"><strong>Aerospace Engineering Portfolio</strong></p>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-      </nav>
-    </header>
+  <!-- HERO -->
+  <section class="hero">
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+    </nav>
 
-    <section class="card">
-      <h2>About</h2>
+    <div class="hero-card">
+      <div class="kicker">Aerospace Engineering</div>
+      <h1>Wesley Janes</h1>
       <p>
-        Rewrite a better about me section so the employers know exactly who I am as a person.
+        I build and validate aerospace systems through CAD, analysis, and testing.
+        My work spans wind tunnel experimentation, structural FEA, and mission-level vehicle analysis.
       </p>
-      <p class="small">
-        Could put something here like skills if needed.
-      </p>
-    </section>
 
-    <section class="card">
-  <h2>Projects</h2>
-  <p class="small">Click to view details for each project.</p>
+      <div class="btnrow">
+        <a class="btn btn-primary" href="#projects">View My Work</a>
+        <a class="btn btn-ghost" href="resume.html">Resume</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="grid">
+  <!-- ABOUT + PROJECTS -->
+  <section class="section">
+    <div class="container">
 
-    <a class="card" href="projects/x15-mission-design.html" style="text-decoration:none;color:inherit;">
-      <h3>Systems & Mission Design Analysis of the X-15 Hypersonic Vehicle</h3>
-      <p class="small">Systems-level requirements, CAD, and thermal analyses</p>
-      <span class="tag">Modeling & Simulation</span><span class="tag">SolidWorks</span><span class="tag">ANSYS</span><span class="tag">Systems Engineering</span><span class="tag">Technical Presentations</span>
+      <section class="card">
+        <h2>About</h2>
+        <p>
+          I am an aerospace engineering student focused on aerodynamic testing and vehicle analysis.
+          I like projects where I can take something from concept to results, whether that means CAD and integration,
+          running wind tunnel tests, building analysis models, or improving how data is processed and presented.
+        </p>
+        <p class="small">
+          Core tools: SolidWorks, ANSYS, Abaqus, MATLAB, Python, LabVIEW, XFOIL
+        </p>
+      </section>
 
-    <a class="card" href="projects/uas-xipiter.html" style="text-decoration:none;color:inherit;">
-      <h3>Unmanned Aircraft System Design and Integration</h3>
-      <p class="small">Airframe CAD, avionics integration, and shop-floor composite fabrication</p>
-      <span class="tag">SolidWorks</span><span class="tag">Python</span><span class="tag">Additive Manufacturing</span><span class="tag">Composites</span><span class="tag">GD&T</span>
-    </a>
+      <section class="card" id="projects">
+        <h2>Projects</h2>
+        <p class="small">Click to view details for each project.</p>
 
-    <a class="card" href="projects/stiffened-panels.html" style="text-decoration:none;color:inherit;">
-      <h3>Aerostructure Design of Stiffened Panels of Multiple Failure Modes</h3>
-      <p class="small">FEA and design-for-manufacture of stiffened structures</p>
-      <span class="tag">Abaqus</span><span class="tag">Sheet Metal</span><span class="tag">GD&amp;T</span>
-    </a>
+        <div class="grid">
 
-        <a class="card" href="projects/rocket-nozzles.html" style="text-decoration:none;color:inherit;">
-      <h3>Compressible Flow Analysis of Rocket Nozzles</h3>
-      <p class="small">Nozzle flow modeling, shocks, choking behavior</p>
-      <span class="tag">ANSYS</span><span class="tag">MATLAB</span>
-    </a>
+          <a class="card" href="projects/x15-mission-design.html" style="text-decoration:none;color:inherit;">
+            <h3>Systems &amp; Mission Design Analysis of the X-15 Hypersonic Vehicle</h3>
+            <p class="small">Systems-level requirements, CAD, and thermal analyses</p>
+            <span class="tag">Modeling &amp; Simulation</span>
+            <span class="tag">SolidWorks</span>
+            <span class="tag">ANSYS</span>
+            <span class="tag">Systems Engineering</span>
+            <span class="tag">Technical Presentations</span>
+          </a>
 
-    <a class="card" href="projects/aerodynamics.html" style="text-decoration:none;color:inherit;">
-      <h3>Aerodynamic Analyses of Modified Leading Edges</h3>
-      <p class="small">
-        Wind tunnel experiments, modified leading edges, and computational correlation
-      </p>
-      <span class="tag">LabVIEW</span>
-      <span class="tag">MATLAB</span>
-      <span class="tag">XFOIL</span>
-      <span class="tag">SolidWorks</span>
-    </a>
+          <a class="card" href="projects/uas-xipiter.html" style="text-decoration:none;color:inherit;">
+            <h3>Unmanned Aircraft System Design and Integration</h3>
+            <p class="small">Airframe CAD, avionics integration, and composite fabrication support</p>
+            <span class="tag">SolidWorks</span>
+            <span class="tag">Python</span>
+            <span class="tag">Additive Manufacturing</span>
+            <span class="tag">Composites</span>
+            <span class="tag">GD&amp;T</span>
+          </a>
 
-  </div>
-</section>
+          <a class="card" href="projects/stiffened-panels.html" style="text-decoration:none;color:inherit;">
+            <h3>Aerostructure Design of Stiffened Panels with Multiple Failure Modes</h3>
+            <p class="small">FEA and design-for-manufacture of stiffened structures</p>
+            <span class="tag">Abaqus</span>
+            <span class="tag">Sheet Metal</span>
+            <span class="tag">GD&amp;T</span>
+          </a>
 
-  </div>
+          <a class="card" href="projects/rocket-nozzles.html" style="text-decoration:none;color:inherit;">
+            <h3>Compressible Flow Analysis of Rocket Nozzles</h3>
+            <p class="small">Nozzle flow modeling, shocks, choking behavior</p>
+            <span class="tag">ANSYS</span>
+            <span class="tag">MATLAB</span>
+          </a>
+
+          <a class="card" href="projects/aerodynamics.html" style="text-decoration:none;color:inherit;">
+            <h3>Aerodynamic Analyses of Modified Leading Edges</h3>
+            <p class="small">Wind tunnel experiments, modified leading edges, and computational correlation</p>
+            <span class="tag">LabVIEW</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">XFOIL</span>
+            <span class="tag">SolidWorks</span>
+          </a>
+
+        </div>
+      </section>
+
+    </div>
+  </section>
 </body>
 </html>
