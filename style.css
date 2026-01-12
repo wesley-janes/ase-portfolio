@@ -151,9 +151,9 @@ h1 {
   box-shadow:
     0 0 0 140px rgba(255,255,255,0.03),
     0 0 0 280px rgba(255,255,255,0.02);
-  top: 50%;
+  top: 58%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
