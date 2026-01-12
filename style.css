@@ -248,3 +248,26 @@ body.inner-page .scroll-cue .chev {
 body.inner-page .hero {
   min-height: 56vh;
 }
+/* ADD TO style.css */
+
+.skill {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.bar {
+  grid-column: 1 / -1;
+  height: 6px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #d7b24a, #b89b3d);
+  border-radius: 999px;
+}
