@@ -274,3 +274,14 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Home page: prevent scrolling */
+body.home {
+  overflow: hidden;
+}
+
+/* Ensure hero fills the viewport */
+.hero {
+  height: 100vh;
+}
