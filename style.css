@@ -111,11 +111,15 @@ h1 {
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;
-  padding: 48px 18px;
+  padding: 0 18px;
   color: #fff;
   background: radial-gradient(circle at 30% 20%, #1d3a5b 0%, #0b1d33 45%, #061526 100%);
   position: relative;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero::before {
@@ -181,8 +185,9 @@ h1 {
   text-align: center;
   position: relative;
   z-index: 2;
-  padding-top: 92px;
+  padding-top: 0;
 }
+
 
 .kicker {
   display: inline-flex;
