@@ -7,8 +7,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   line-height: 1.6;
-  color: #111;
-  background: #fff;
+  color: rgba(255,255,255,0.92);
+  background: radial-gradient(circle at 30% 20%, #1d3a5b 0%, #0b1d33 45%, #061526 100%);
 }
 
 .container {
@@ -51,12 +51,13 @@ h1 {
 
 /* ===== CARDS ===== */
 .card {
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgba(255,255,255,0.12);
   border-radius: 12px;
   padding: 16px;
   margin-top: 14px;
-  background: #fff;
-  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.25);
 }
 
 .grid {
@@ -65,13 +66,16 @@ h1 {
   gap: 14px;
 }
 
+.small { color: rgba(255,255,255,0.75); font-size: 0.95rem; }
+
 .tag {
   display: inline-block;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(255,255,255,0.18);
   border-radius: 999px;
   padding: 4px 10px;
   margin: 6px 6px 0 0;
   font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
 }
 
 /* ===== SPLIT LAYOUT ===== */
