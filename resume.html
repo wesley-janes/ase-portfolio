@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resume | Wesley Janes</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
+  <!-- HERO HEADER -->
+  <section class="hero" style="min-height: 32vh;">
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+    </nav>
 
-    <header class="card">
-      <div>
-        <h1>Resume</h1>
-        <p class="subtitle"><strong></strong></p>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-      </nav>
-    </header>
-
-    <section class="card">
-      <p>
-        <a href="Wesley_Janes_Resume_Official.pdf" target="_blank">
-          Download PDF Resume
-        </a>
+    <div class="hero-card" style="text-align:left;">
+      <div class="kicker">Resume</div>
+      <h1 style="margin-bottom: 6px;">Resume</h1>
+      <p class="small" style="max-width: 760px;">
+        Download my resume or review a brief summary of my technical background.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Highlights</h2>
-      <ul>
-        <li>Aerospace engineering major with focus on aerodynamics, structures, and testing</li>
-        <li>Experience in SolidWorks, ANSYS, Abaqus, MATLAB, Python, LabVIEW</li>
-        <li>Hands-on wind tunnel testing and experimental data reduction</li>
-      </ul>
-    </section>
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container">
 
-  </div>
+      <section class="card">
+        <h2>Download</h2>
+        <p class="small">
+          One-page technical resume highlighting aerospace design, analysis, and testing experience.
+        </p>
+        <p>
+          <a class="btn btn-primary" href="Wesley_Janes_Resume_Official.pdf" target="_blank">
+            Download PDF Resume
+          </a>
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Highlights</h2>
+        <ul>
+          <li>Aerospace engineering student focused on aerodynamics, structures, and experimental testing</li>
+          <li>Experience with SolidWorks, ANSYS, Abaqus, MATLAB, Python, LabVIEW, and XFOIL</li>
+          <li>Hands-on wind tunnel testing, data acquisition, and experimental data reduction</li>
+          <li>Project experience spanning hypersonic vehicles, UAS design, aerostructures, and propulsion</li>
+        </ul>
+      </section>
+
+    </div>
+  </section>
 </body>
 </html>
