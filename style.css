@@ -243,3 +243,8 @@ body.inner-page .scroll-cue .chev {
     grid-template-columns: 1fr;
   }
 }
+
+/* Slightly shorter inner-page hero */
+body.inner-page .hero {
+  min-height: 60vh;
+}
