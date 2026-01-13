@@ -346,3 +346,16 @@ body.inner-page .scroll-cue .chev {
   color: rgba(255,255,255,0.96) !important;
   border-left-color: rgba(255,255,255,0.22) !important;
 }
+.edu-item {
+  position: relative;
+  padding-right: 110px;
+}
+
+.edu-logo {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  height: 56px;
+  width: auto;
+  opacity: 0.9;
+}
