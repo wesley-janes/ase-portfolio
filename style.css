@@ -459,3 +459,12 @@ body.inner-page .scroll-cue .chev {
 .project-image img.pos-top { object-position: center 12% !important; }
 .project-image img.pos-mid { object-position: center 35% !important; }
 .project-image img.pos-bot { object-position: center 60% !important; }
+
+/* Per-project image height overrides */
+.project-image.tall {
+  height: 300px;
+}
+
+.project-image.slight {
+  height: 260px;
+}
