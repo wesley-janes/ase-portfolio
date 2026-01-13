@@ -794,45 +794,51 @@ body.inner-page .hero p{
   margin: 6px 0;
   line-height: 1.6;
 }
-/* HERO NAME GRADIENT SHIMMER WITH GLOW */
-.hero-card h1{
-  background: linear-gradient(
-    110deg,
-    #ffffff 40%,
-    rgba(255,255,255,0.85) 50%,
-    #ffffff 60%
-  );
-  background-size: 200% 100%;
-  background-position: 0% 50%;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-
-  text-shadow:
-    0 0 6px rgba(255,255,255,0.25),
-    0 0 14px rgba(255,255,255,0.12);
-
-  animation: nameShimmerGlow 7s ease-in-out infinite;
+/* HERO NAME: shimmer pass with traveling glow */
+.shimmer-name{
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
 }
 
-@keyframes nameShimmerGlow{
+/* the moving highlight layer */
+.shimmer-name::after{
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  background: linear-gradient(
+    110deg,
+    rgba(255,255,255,0.0) 40%,
+    rgba(255,255,255,0.95) 50%,
+    rgba(255,255,255,0.0) 60%
+  );
+  background-size: 220% 100%;
+  background-position: 0% 50%;
+
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.55))
+          drop-shadow(0 0 22px rgba(255,255,255,0.25));
+
+  opacity: 0.95;
+  animation: namePass 7s ease-in-out infinite;
+}
+
+@keyframes namePass{
   0%{
     background-position: 0% 50%;
-    text-shadow:
-      0 0 5px rgba(255,255,255,0.20),
-      0 0 12px rgba(255,255,255,0.10);
+    opacity: 0.65;
   }
   50%{
     background-position: 100% 50%;
-    text-shadow:
-      0 0 12px rgba(255,255,255,0.70),
-      0 0 28px rgba(255,255,255,0.40);
+    opacity: 1;
   }
   100%{
     background-position: 0% 50%;
-    text-shadow:
-      0 0 5px rgba(255,255,255,0.20),
-      0 0 12px rgba(255,255,255,0.10);
+    opacity: 0.65;
   }
 }
