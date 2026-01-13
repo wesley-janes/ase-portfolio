@@ -468,3 +468,19 @@ body.inner-page .scroll-cue .chev {
 .project-image.slight {
   height: 260px;
 }
+/* Use for plots that must show full figure */
+.project-image.contain {
+  background: #0b1a2a;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.project-image.contain img {
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Smaller padding option */
+.project-image.contain.pad-sm {
+  padding: 6px;
+}
