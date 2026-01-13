@@ -794,12 +794,12 @@ body.inner-page .hero p{
   margin: 6px 0;
   line-height: 1.6;
 }
-/* HERO NAME GRADIENT SHIMMER */
+/* HERO NAME GRADIENT SHIMMER WITH GLOW */
 .hero-card h1{
   background: linear-gradient(
     110deg,
     #ffffff 40%,
-    rgba(255,255,255,0.55) 50%,
+    rgba(255,255,255,0.85) 50%,
     #ffffff 60%
   );
   background-size: 200% 100%;
@@ -809,18 +809,30 @@ body.inner-page .hero p{
   background-clip: text;
   color: transparent;
 
-  animation: nameShimmer 6.5s ease-in-out infinite;
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.25),
+    0 0 14px rgba(255,255,255,0.12);
+
+  animation: nameShimmerGlow 7s ease-in-out infinite;
 }
 
-@keyframes nameShimmer{
+@keyframes nameShimmerGlow{
   0%{
     background-position: 0% 50%;
+    text-shadow:
+      0 0 5px rgba(255,255,255,0.20),
+      0 0 12px rgba(255,255,255,0.10);
   }
   50%{
     background-position: 100% 50%;
+    text-shadow:
+      0 0 12px rgba(255,255,255,0.70),
+      0 0 28px rgba(255,255,255,0.40);
   }
   100%{
     background-position: 0% 50%;
+    text-shadow:
+      0 0 5px rgba(255,255,255,0.20),
+      0 0 12px rgba(255,255,255,0.10);
   }
 }
-
