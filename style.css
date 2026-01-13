@@ -709,3 +709,13 @@ body.inner-page .hero p {
   margin-left: auto;
   margin-right: auto;
 }
+/* ===== FORCE CENTER HERO TITLES ON INNER PAGES ===== */
+body.inner-page .hero-card{
+  text-align: center;
+}
+
+body.inner-page .hero h1,
+body.inner-page .hero p{
+  margin-left: auto;
+  margin-right: auto;
+}
