@@ -695,3 +695,17 @@ body.home .hero-card{
   position: relative;
   z-index: 4;
 }
+/* ===== CENTER HERO TITLES ON INNER PAGES ===== */
+body.inner-page .hero-card {
+  text-align: center;
+}
+
+body.inner-page .hero h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.inner-page .hero p {
+  margin-left: auto;
+  margin-right: auto;
+}
