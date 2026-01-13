@@ -46,12 +46,11 @@ h2, h3 {
 .section-header {
   color: rgba(255,255,255,0.96);
   font-weight: 800;
-  letter-spacing: 0.2px;
-  border-left: 4px solid rgba(255,255,255,0.22);
-  padding-left: 12px;
+  letter-spacing: 0.3px;
   margin-bottom: 16px;
+  padding-left: 0;
+  border: none;
 }
-
 
 /* ===== CARDS ===== */
 .card {
@@ -358,4 +357,10 @@ body.inner-page .scroll-cue .chev {
   height: 56px;
   width: auto;
   opacity: 0.9;
+}
+.section,
+.section *,
+.card,
+.card * {
+  border-left: none !important;
 }
