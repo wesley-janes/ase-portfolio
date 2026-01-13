@@ -398,19 +398,18 @@ body.inner-page .scroll-cue .chev {
 /* Image area */
 .project-image {
   position: relative;
-  height: 190px;
+  height: 210px;
   overflow: hidden;
+  background: #0b1a2a;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: center 30%;
   display: block;
-  background: rgba(0,0,0,0.22);
 }
-
 
 /* Category pill */
 .project-tag {
