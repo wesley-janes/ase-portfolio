@@ -307,16 +307,22 @@ body.inner-page .scroll-cue .chev {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 18px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
+  margin: 18px auto 10px auto;
+  padding: 14px 16px;
+  max-width: 520px;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.18);
 }
 
 .logo-row img {
-  height: 46px;
+  height: 80px;
   width: auto;
   opacity: 0.95;
+  filter: none;
 }
+
 
 /* Education date */
 .edu-date {
