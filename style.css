@@ -398,10 +398,11 @@ body.inner-page .scroll-cue .chev {
 /* Image area */
 .project-image {
   position: relative;
-  height: 210px;
+  height: 240px;
   overflow: hidden;
   background: #0b1a2a;
 }
+
 
 .project-image img {
   width: 100%;
@@ -409,9 +410,9 @@ body.inner-page .scroll-cue .chev {
   object-fit: cover;
   object-position: center 35%;
   display: block;
-  transform: scale(1.0);
-  filter: contrast(1.02) brightness(0.99);
+  transform: none;
 }
+
 
 /* Category pill */
 .project-tag {
@@ -449,11 +450,12 @@ body.inner-page .scroll-cue .chev {
   margin: 6px 6px 0 0;
 }
 
-/* FORCE per-image framing (BOTTOM of style.css) */
-.project-image img.zoom-none { transform: scale(1.0) !important; }
-.project-image img.zoom-soft { transform: scale(0.95) !important; }
-.project-image img.zoom-mid  { transform: scale(0.90) !important; }
+/* Per-image framing controls (BOTTOM of style.css) */
+.project-image img.zoom-none { transform: none !important; }
+.project-image img.zoom-soft { transform: none !important; }
+.project-image img.zoom-mid  { transform: none !important; }
 
-.project-image img.pos-top { object-position: center 0% !important; }
+/* Use position only (no shrinking) */
+.project-image img.pos-top { object-position: center 12% !important; }
 .project-image img.pos-mid { object-position: center 35% !important; }
-.project-image img.pos-bot { object-position: center 80% !important; }
+.project-image img.pos-bot { object-position: center 60% !important; }
