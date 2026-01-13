@@ -735,3 +735,20 @@ body.inner-page .hero p{
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.skills-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill{
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #ffffff;
+  white-space: nowrap;
+}
