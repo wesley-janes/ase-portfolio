@@ -497,3 +497,50 @@ body.inner-page .scroll-cue .chev {
   width: 100%;
   height: 100%;
 }
+/* ===== CLEANER HIGHLIGHTS (VISUAL) ===== */
+
+/* Use on the Highlights card container */
+.highlights {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 22px;
+}
+
+/* Make bullets breathe */
+.highlights ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+
+.highlights li {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+/* Softer bullet marker */
+.highlights li::marker {
+  color: rgba(255,255,255,0.45);
+}
+
+/* Make the bold label act like a clean left anchor */
+.highlights li strong {
+  display: inline-block;
+  min-width: 210px;
+  margin-right: 10px;
+  color: rgba(255,255,255,0.96);
+}
+
+/* Better on small screens */
+@media (max-width: 720px) {
+  .highlights {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .highlights li strong {
+    display: block;
+    min-width: 0;
+    margin: 0 0 4px 0;
+  }
+}
