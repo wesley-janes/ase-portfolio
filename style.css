@@ -449,11 +449,11 @@ body.inner-page .scroll-cue .chev {
   margin: 6px 6px 0 0;
 }
 
-/* FORCE per-image framing (put at very bottom of style.css) */
+/* FORCE per-image framing (BOTTOM of style.css) */
 .project-image img.zoom-none { transform: scale(1.0) !important; }
-.project-image img.zoom-soft { transform: scale(1.015) !important; }
-.project-image img.zoom-mid  { transform: scale(1.03) !important; }
+.project-image img.zoom-soft { transform: scale(0.95) !important; }
+.project-image img.zoom-mid  { transform: scale(0.90) !important; }
 
-.project-image img.pos-top { object-position: center 18% !important; }
+.project-image img.pos-top { object-position: center 0% !important; }
 .project-image img.pos-mid { object-position: center 35% !important; }
-.project-image img.pos-bot { object-position: center 55% !important; }
+.project-image img.pos-bot { object-position: center 80% !important; }
