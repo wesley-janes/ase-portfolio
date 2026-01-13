@@ -44,11 +44,14 @@ h2, h3 {
 
 /* Color pop headers used on About sections */
 .section-header {
-  color: var(--accent);
-  border-left: 4px solid var(--accent);
+  color: rgba(255,255,255,0.96);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  border-left: 4px solid rgba(255,255,255,0.22);
   padding-left: 12px;
   margin-bottom: 16px;
 }
+
 
 /* ===== CARDS ===== */
 .card {
@@ -331,4 +334,9 @@ body.inner-page .scroll-cue .chev {
   .grid {
     grid-template-columns: 1fr;
   }
+}
+
+.section-header {
+  color: rgba(255,255,255,0.96) !important;
+  border-left-color: rgba(255,255,255,0.22) !important;
 }
