@@ -413,17 +413,6 @@ body.inner-page .scroll-cue .chev {
   filter: contrast(1.02) brightness(0.99);
 }
 
-/* Image zoom control */
-.project-image img.zoom-none { transform: scale(1.0); }
-.project-image img.zoom-soft { transform: scale(1.015); }
-.project-image img.zoom-mid  { transform: scale(1.03); }
-
-/* Vertical framing */
-.project-image img.pos-top { object-position: center 22%; }
-.project-image img.pos-mid { object-position: center 35%; }
-.project-image img.pos-bot { object-position: center 50%; }
-
-
 /* Category pill */
 .project-tag {
   position: absolute;
@@ -459,3 +448,12 @@ body.inner-page .scroll-cue .chev {
 .project-tags .tag {
   margin: 6px 6px 0 0;
 }
+
+/* FORCE per-image framing (put at very bottom of style.css) */
+.project-image img.zoom-none { transform: scale(1.0) !important; }
+.project-image img.zoom-soft { transform: scale(1.015) !important; }
+.project-image img.zoom-mid  { transform: scale(1.03) !important; }
+
+.project-image img.pos-top { object-position: center 18% !important; }
+.project-image img.pos-mid { object-position: center 35% !important; }
+.project-image img.pos-bot { object-position: center 55% !important; }
