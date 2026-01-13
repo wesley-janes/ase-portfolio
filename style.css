@@ -752,3 +752,45 @@ body.inner-page .hero p{
   color: #ffffff;
   white-space: nowrap;
 }
+
+.exp-item{
+  padding: 14px 0;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.exp-item:first-of-type{
+  border-top: none;
+  padding-top: 0;
+}
+
+.exp-top{
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.exp-role{
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.exp-org{
+  opacity: 0.9;
+  margin-top: 2px;
+}
+
+.exp-meta{
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.exp-bullets{
+  margin: 10px 0 0 18px;
+}
+
+.exp-bullets li{
+  margin: 6px 0;
+  line-height: 1.6;
+}
