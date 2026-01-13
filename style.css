@@ -794,3 +794,8 @@ body.inner-page .hero p{
   margin: 6px 0;
   line-height: 1.6;
 }
+.hero-card h1:hover{
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.6),
+    0 0 22px rgba(255,255,255,0.35);
+}
