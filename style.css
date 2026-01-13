@@ -624,3 +624,73 @@ body.inner-page .scroll-cue .chev {
   position: relative;
   z-index: 1;
 }
+/* ===== HERO BACKGROUND FIX ===== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #0b1220, #04070d);
+}
+
+/* ===== STARFIELD ===== */
+.starfield {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* create many stars */
+.starfield::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(1px 1px at 10% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 30% 80%, #fff, transparent),
+    radial-gradient(1px 1px at 50% 40%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 60%, #fff, transparent),
+    radial-gradient(1px 1px at 90% 30%, #fff, transparent),
+    radial-gradient(1px 1px at 20% 50%, #fff, transparent),
+    radial-gradient(1px 1px at 80% 80%, #fff, transparent);
+  animation: twinkle 3.5s infinite alternate;
+  opacity: 0.8;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to { opacity: 0.9; }
+}
+
+/* ===== SHOOTING STAR ===== */
+.shooting-star {
+  position: absolute;
+  top: 15%;
+  left: -30%;
+  width: 180px;
+  height: 1.5px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0));
+  animation: shoot 6s infinite;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  35% {
+    transform: translateX(130vw) translateY(35vh);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ===== KEEP CONTENT ABOVE BACKGROUND ===== */
+.hero > *:not(.starfield) {
+  position: relative;
+  z-index: 1;
+}
