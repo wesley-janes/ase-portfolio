@@ -1,5 +1,15 @@
 :root {
   --max: 980px;
+
+  /* Accent */
+  --accent: #5d1725;
+  --accent2: #d7b24a;
+
+  /* Surfaces */
+  --card-bg: rgba(255,255,255,0.06);
+  --card-border: rgba(255,255,255,0.12);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.75);
 }
 
 /* ===== BASE ===== */
@@ -7,17 +17,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   line-height: 1.6;
-  color: rgba(255,255,255,0.92);
+  color: var(--text);
   background: radial-gradient(circle at 30% 20%, #1d3a5b 0%, #0b1d33 45%, #061526 100%);
 }
 
 .container {
   max-width: var(--max);
   margin: 0 auto;
+  padding: 0 18px;
 }
 
 .small {
-  color: rgba(255,255,255,0.75);
+  color: var(--muted);
   font-size: 0.95rem;
 }
 
@@ -27,15 +38,35 @@ h1 {
   margin: 0;
 }
 
+h2, h3 {
+  margin: 0;
+}
+
+/* Color pop headers used on About sections */
+.section-header {
+  color: var(--accent);
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+
 /* ===== CARDS ===== */
 .card {
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid var(--card-border);
   border-radius: 12px;
   padding: 16px;
   margin-top: 14px;
-  background: rgba(255,255,255,0.06);
+  background: var(--card-bg);
   backdrop-filter: blur(6px);
   box-shadow: 0 10px 26px rgba(0,0,0,0.25);
+}
+
+/* Prevent nested cards from looking too chunky */
+.card .card {
+  margin-top: 12px;
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.10);
+  box-shadow: none;
 }
 
 .grid {
@@ -74,7 +105,7 @@ body.home .hero {
 
 /* About / Projects / Resume hero */
 body.inner-page .hero {
-  min-height: 68vh;
+  min-height: 56vh;
   height: auto;
   padding-bottom: 56px;
 }
@@ -177,7 +208,7 @@ body.inner-page .hero {
 }
 
 .btn-primary {
-  background: #d7b24a;
+  background: var(--accent2);
   color: #1a1a1a;
 }
 
@@ -237,19 +268,15 @@ body.inner-page .scroll-cue .chev {
   padding: 44px 18px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 820px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+/* ===== ABOUT: EXPERIENCE + SKILLS SPLIT ===== */
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
 }
 
-/* Slightly shorter inner-page hero */
-body.inner-page .hero {
-  min-height: 56vh;
-}
-/* ADD TO style.css */
-
+/* Skills bars */
 .skill {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -268,6 +295,40 @@ body.inner-page .hero {
 
 .bar div {
   height: 100%;
-  background: linear-gradient(90deg, #d7b24a, #b89b3d);
+  background: linear-gradient(90deg, var(--accent2), #b89b3d);
   border-radius: 999px;
+}
+
+/* Education logos row */
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.logo-row img {
+  height: 46px;
+  width: auto;
+  opacity: 0.95;
+}
+
+/* Education date */
+.edu-date {
+  opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
