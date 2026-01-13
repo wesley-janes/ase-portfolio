@@ -557,3 +557,70 @@ body.inner-page .scroll-cue .chev {
   transform: translateY(-2px);
   box-shadow: 0 18px 40px rgba(0,0,0,0.35);
 }
+/* STARFIELD BACKGROUND */
+.starfield {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* TWINKLING STARS */
+.starfield::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(1px 1px at 20% 30%, white, transparent),
+    radial-gradient(1px 1px at 40% 70%, white, transparent),
+    radial-gradient(1px 1px at 60% 40%, white, transparent),
+    radial-gradient(1px 1px at 80% 20%, white, transparent),
+    radial-gradient(1px 1px at 30% 80%, white, transparent),
+    radial-gradient(1px 1px at 70% 60%, white, transparent);
+  animation: twinkle 4s infinite alternate;
+  opacity: 0.8;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.4; }
+  to { opacity: 0.9; }
+}
+
+/* SHOOTING STAR OR ROCKET */
+.shooting-star {
+  position: absolute;
+  top: 20%;
+  left: -150px;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, white, transparent);
+  animation: shoot 5s infinite;
+  opacity: 0.9;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(120vw) translateY(40vh);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ENSURE HERO CONTENT IS ABOVE */
+.hero {
+  position: relative;
+}
+
+.hero-card {
+  position: relative;
+  z-index: 1;
+}
