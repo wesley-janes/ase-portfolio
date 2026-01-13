@@ -799,7 +799,7 @@ body.inner-page .hero p{
   text-shadow:
     0 0 6px rgba(255,255,255,0.35),
     0 0 14px rgba(255,255,255,0.18);
-  animation: nameGlow 4.5s ease-in-out infinite;
+  animation: nameGlow 3.5s ease-in-out infinite;
 }
 
 @keyframes nameGlow{
