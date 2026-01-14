@@ -872,3 +872,42 @@ body.inner-page .hero p{
     height: 150px;
   }
 }
+/* ===== PROJECT PAGE HEADER (container style pages) ===== */
+.project-head {
+  margin-top: 22px;
+}
+
+.project-head-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.project-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-nav a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+}
+
+.project-nav a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.16);
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: rgba(255,255,255,0.78);
+}
