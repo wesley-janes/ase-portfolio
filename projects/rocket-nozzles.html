@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rocket Nozzle Compressible Flow Analysis | Wesley Janes</title>
+  <title>Compressible Flow Analysis of Rocket Nozzles | Wesley Janes</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -18,9 +18,8 @@
     </nav>
 
     <div class="hero-card">
-      <div class="kicker">Propulsion</div>
-      <h1>Rocket Nozzle Compressible Flow Analysis</h1>
-      <p>Converging diverging nozzle modeling, choking conditions, and performance estimation</p>
+      <h1>Compressible Flow Analysis of Rocket Nozzles</h1>
+      <p>ANSYS CFD and MATLAB automation to evaluate choking, shock formation, and nozzle performance</p>
     </div>
 
     <div class="scroll-cue">
@@ -36,46 +35,57 @@
       <section class="card">
         <h2>Overview</h2>
         <p>
-          Analyzed compressible flow through a converging diverging rocket nozzle to predict choking behavior, exit conditions,
-          and performance metrics. Combined isentropic flow relations with numerical calculations to evaluate the effects of
-          area ratio and chamber conditions on Mach number, pressure, and thrust related quantities.
+          Simulated compressible flow through converging/diverging rocket nozzles to evaluate choking behavior, shockwave
+          formation, and performance at target operating conditions. Used ANSYS to capture internal flow features and
+          compared computational results against isentropic flow relations to validate trends. Automated post-processing
+          and performance visualization in MATLAB to accelerate iteration on nozzle calculations and outputs.
         </p>
       </section>
 
       <section class="card">
         <h2>Photos</h2>
 
-        <div class="star-media-grid">
-          <img src="images/nozzle_01.png" alt="Converging diverging nozzle geometry and key dimensions">
-          <img src="images/nozzle_02.png" alt="Mach number distribution through nozzle from 1D or CFD style results">
-          <img src="images/nozzle_03.png" alt="Pressure and temperature trends through nozzle or table of states">
-          <img src="images/nozzle_04.png" alt="Performance plot such as thrust coefficient or exit pressure versus area ratio">
+        <h3 style="margin-top:12px;">Analysis</h3>
+        <div class="star-media-masonry">
+          <img src="../images/nozzle_01.png" alt="Converging diverging nozzle geometry and key dimensions">
+          <img src="../images/nozzle_02.png" alt="Mach number contours showing choked flow and acceleration through nozzle">
+          <img src="../images/nozzle_03.png" alt="Shock structure visualization inside nozzle flowfield">
+          <img src="../images/nozzle_04.png" alt="Pressure contour results through converging diverging nozzle">
+        </div>
+
+        <h3 style="margin-top:20px;">Results</h3>
+        <div class="star-media-masonry">
+          <img src="../images/nozzle_results_01.png" alt="Isentropic correlation comparison between CFD and analytical solution">
+          <img src="../images/nozzle_results_02.png" alt="Performance visualization generated in MATLAB">
+          <img src="../images/nozzle_results_03.png" alt="Processed data outputs for nozzle performance and mass flow calculations">
         </div>
       </section>
 
       <section class="card">
         <h2>My Role</h2>
         <ul>
-          <li>Built a nozzle analysis workflow using isentropic relations to solve for throat and exit conditions</li>
-          <li>Computed Mach number, pressure, temperature, and density across the nozzle for varying area ratios</li>
-          <li>Evaluated performance sensitivity to chamber conditions and documented assumptions and limitations</li>
+          <li>Simulated converging/diverging nozzle performance in ANSYS, analyzing shockwave formation and choked flow behavior</li>
+          <li>Validated computational results by correlating CFD outputs with isentropic flow equations</li>
+          <li>Automated post-processing and performance visualization in MATLAB, reducing data processing time by 80%</li>
         </ul>
       </section>
 
       <section class="card">
         <h2>Tools Used</h2>
-        <span class="tag">MATLAB</span>
+        <span class="tag">ANSYS</span>
+        <span class="tag">ANSYS Fluent</span>
+        <span class="tag">CFD</span>
         <span class="tag">Compressible Flow</span>
+        <span class="tag">MATLAB</span>
         <span class="tag">Isentropic Relations</span>
-        <span class="tag">Data Visualization</span>
       </section>
 
       <section class="card">
         <h2>Key Results</h2>
         <ul>
-          <li>Predicted choking conditions at the throat and identified exit Mach number trends versus area ratio</li>
-          <li>Quantified nozzle state changes from chamber to exit to support performance estimation and comparison</li>
-          <li>Delivered a reusable calculation template for rapid evaluation of nozzle designs and operating points</li>
+          <li>Identified choking conditions and shockwave behavior in converging/diverging nozzle simulations</li>
+          <li>Achieved approximately 90% correlation between CFD results and isentropic flow solutions</li>
+          <li>Reduced post-processing time by 80% through MATLAB automation, enabling faster iteration of nozzle calculations</li>
         </ul>
       </section>
 
