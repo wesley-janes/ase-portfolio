@@ -911,3 +911,9 @@ body.inner-page .hero p{
   margin-top: 6px;
   color: rgba(255,255,255,0.78);
 }
+
+/* ===== PHOTO GRIDS: show full image (no cropping) ===== */
+.star-media-grid img{
+  object-fit: contain !important;
+  background: rgba(0,0,0,0.25);
+}
