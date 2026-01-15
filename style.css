@@ -962,3 +962,27 @@ body.inner-page .hero p{
     font-size: clamp(2.0rem, 5.2vw, 3.6rem);
   }
 }
+/* ===== ABOUT PAGE MOBILE STACK FIX ===== */
+@media (max-width: 768px){
+  /* if your about intro uses an inline grid, this forces a clean stack */
+  body.inner-page .hero-card > div{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* make the headshot scale nicely */
+  body.inner-page .hero-card img{
+    width: 160px !important;
+    height: 160px !important;
+    border-radius: 50% !important;
+  }
+
+  /* tighten title spacing so it doesn’t feel stretched */
+  body.inner-page .hero-card h1{
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+}
