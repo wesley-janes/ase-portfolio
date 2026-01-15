@@ -169,6 +169,20 @@ body.inner-page .hero {
   color: #fff;
   background: rgba(255,255,255,0.10);
 }
+/* ===== FIX: NAV ALWAYS CLICKABLE ON INNER PAGES ===== */
+.topnav{
+  z-index: 50;              /* higher than hero text */
+}
+
+/* push hero content down so it never overlaps the nav on laptops */
+body.inner-page .hero{
+  padding-top: 86px;        /* space for nav */
+}
+
+/* keep hero content below nav */
+.hero-card{
+  z-index: 2;
+}
 
 /* ===== HERO CONTENT ===== */
 .hero-card {
@@ -940,5 +954,11 @@ body.inner-page .hero p{
 @media (max-width: 760px){
   .star-media-masonry{
     column-count: 1;
+  }
+}
+/* ===== INNER PAGE HERO TITLE RESPONSIVE TUNING ===== */
+@media (max-width: 1100px){
+  body.inner-page .hero h1{
+    font-size: clamp(2.0rem, 5.2vw, 3.6rem);
   }
 }
